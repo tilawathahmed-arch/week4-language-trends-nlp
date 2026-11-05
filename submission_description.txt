@@ -1,0 +1,7 @@
+This report investigates changes in news language using the HuffPost News Category Dataset, which contains 210,000 headlines and short descriptions published between 2012 and 2022. It examines how vocabulary, phrases, latent topics, and news categories vary over time.
+
+The methodology covers dataset loading, date validation, text cleaning, lowercasing, whitespace normalization, and tokenization. Headlines and short descriptions are combined for analysis, while fields are retained for inspection. Frequency analysis uses unigrams and bigrams to identify words and expressions. Selected phrases related to technology, culture, climate, and public issues are tracked using annual document rates per 1,000 articles, linear trend slopes, and Spearman correlation.
+
+For advanced analysis, Latent Dirichlet Allocation discovers word groups and estimates topic prevalence by year. TF-IDF features and MiniBatchKMeans cluster documents and track changes in cluster proportions. Visualizations include yearly article counts, category shares, phrase trends, topic prevalence, cluster shares, headline length, and frequent n-grams.
+
+The report discusses interpretation, reproducibility, challenges, limitations, and recommendations. It highlights uneven dataset coverage, because most records occur before May 2018. The Python pipeline exports CSV summaries, JSON metadata, and charts so the analysis can be repeated and extended. The project demonstrates temporal text mining and unsupervised NLP methods for examining language trends.
